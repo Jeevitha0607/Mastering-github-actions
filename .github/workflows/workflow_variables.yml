@@ -4,7 +4,7 @@ on:
   workflow_dispatch
 
 env:
-  cloud: google-cloud
+  cloud: AWS-cloud
 
 jobs:
   greeting_job:
@@ -12,8 +12,8 @@ jobs:
     env:
       Greeting: Hello
     steps:
-      - name: "Say Hello Mona it's Monday"
+      - name: "sample step"
         run: echo "$Greeting $First_Name is using $cloud!"
         env:
-          First_Name: Vishal
+          First_Name: Janson
 
